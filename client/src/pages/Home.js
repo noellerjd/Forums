@@ -1,12 +1,15 @@
 import React from "react";
 
 import Postboard from "../components/Postboard";
+import PostButton from "../components/PostButton";
 
-export default function Home() {
+const Home = () => {
   return (
-    <section>
-      <div className="flex justify-center shadow-sm">Forum Home</div>
+    <div className="w-1/2 lg:w-11/12 flex-col mx-auto">
+      <PostButton />
       <Postboard />
-    </section>
+    </div>
   );
-}
+};
+
+export default Home;
