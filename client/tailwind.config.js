@@ -11,6 +11,7 @@ module.exports = {
       black: "#171717",
     },
     screens: {
+      xl: { max: "1280px" },
       lg: { max: "1023px" },
       md: { max: "768px" },
       sm: { max: "640px" },
