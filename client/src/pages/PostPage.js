@@ -1,13 +1,28 @@
 import React from "react";
 
-import Post from "../components/Post";
 import Comment from "../components/Comment";
+import FullPost from "../components/FullPost";
 
-export default function PostPage() {
+const PostPage = () => {
   return (
-    <div className="w-1/2 lg:w-11/12 flex-col mx-auto">
-      <Post />
+    <div className="w-[min(calc(100vw-10%),1000px)] flex-col mx-auto pb-5">
+      <FullPost />
+      <Comment />
+      <Comment />
+      <Comment />
+      <Comment />
+      <Comment />
+      <Comment />
+      <Comment />
+      <Comment />
+      <Comment />
+      <Comment />
+      <Comment />
+      <Comment />
+      <Comment />
       <Comment />
     </div>
   );
-}
+};
+
+export default PostPage;
