@@ -5,7 +5,7 @@ import PostButton from "../components/PostButton";
 
 const Home = () => {
   return (
-    <div className="w-1/2 lg:w-11/12 flex-col mx-auto">
+    <div className="w-[min(calc(100vw-10%),1000px)] flex-col mx-auto">
       <PostButton />
       <Postboard />
     </div>

@@ -1,9 +1,6 @@
 const PostButton = () => {
   return (
-    <button
-      id="create-post-btn"
-      className="w-full text-white bg-lightblue text-xl py-2 rounded-md"
-    >
+    <button className="transition ease-in-out duration-300 text-white bg-lightblue hover:bg-blue text-xl py-2 rounded-md w-full ">
       Create a Post!
     </button>
   );
