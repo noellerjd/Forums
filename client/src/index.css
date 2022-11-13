@@ -25,11 +25,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-#create-post-btn {
-  transition: ease all 0.3s;
-}
-
-#create-post-btn:hover {
-  background-color: var(--blue);
-}
