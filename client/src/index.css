@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --white: #e4e4e4;
+  --lightblue: #1c7ed4;
+  --blue: #2f1bd3;
+  --tan: #d4b599;
+  --lightblack: #292929;
+  --black: #171717;
+}
+
 body {
   height: 100vh;
   margin: 0;
@@ -15,4 +24,12 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#create-post-btn {
+  transition: ease all 0.3s;
+}
+
+#create-post-btn:hover {
+  background-color: var(--blue);
 }
