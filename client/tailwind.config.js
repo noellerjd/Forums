@@ -7,7 +7,8 @@ module.exports = {
       lightblue: "#1C7ED4",
       blue: "#2F1BD3",
       tan: "#D4B599",
-      lightblack: "#292929",
+      lightestblack: "#474748",
+      lightblack: "#1C1C1C",
       black: "#171717",
     },
     screens: {
