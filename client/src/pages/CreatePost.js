@@ -24,17 +24,17 @@ const CreatePost = () => {
       <h1 className="text-2xl text-center text-white mb-10">Create a Post</h1>
       <form
         action=""
-        className="flex-col flex gap-y-3 items-center bg-lightblack text-white p-3"
+        className="flex-col flex gap-y-3 items-center bg-lightblack text-white p-3 rounded-md"
       >
         <input
           type="text"
-          className="outline-none bg-lightblack w-full text-lg border-b-2 border-black focus:border-lightblue transition ease-in-out duration-300"
-          placeholder="Title..."
+          className="outline-none p-2 rounded-lg bg-lightblack w-full text-lg border border-lightestblack focus:border-white transition ease-in-out duration-300 placeholder-lightestblack"
+          placeholder="Title"
         />
         <textarea
           type="text"
-          className="h-[100px] border-b-2 border-black outline-none bg-lightblack w-full text-md input-border-bottom resize-none focus:border-lightblue transition ease-in-out duration-300"
-          placeholder="What would you like to say?"
+          className="h-[100px] p-2 rounded-lg border-lightestblack border outline-none bg-lightblack w-full text-md resize-none focus:border-white transition ease-in-out duration-300 placeholder-lightestblack"
+          placeholder="Text"
           onChange={(event) => {
             handleBodyChange(event);
             updateTextAreaSize(event, "100px");
