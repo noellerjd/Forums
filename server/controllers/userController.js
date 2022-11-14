@@ -1,4 +1,4 @@
-const { User, Thought } = require("../models");
+const {} = require("../models");
 
 module.exports = {
   // get users, get a user, update user, create user, delete a user
