@@ -2,7 +2,6 @@ import { useState, useRef } from "react";
 
 const CreatePost = () => {
   const [body, setBody] = useState("");
-  const [textAreaHeight, setTextAreaHeight] = useState("59");
   const textArea = useRef(null);
 
   const handleBodyChange = (event) => {
