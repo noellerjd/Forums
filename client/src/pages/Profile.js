@@ -27,6 +27,7 @@ const Profile = () => {
           src={user?.picture}
           className="rounded-full w-20 my-5"
           alt={user?.given_name + "'s profile picture"}
+          referrerPolicy="no-referrer"
         />
         <h1 className="text-white">{user?.given_name}'s Profile</h1>
       </div>
