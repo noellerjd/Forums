@@ -12,19 +12,8 @@ const Comment = () => {
         <p className="cursor-pointer hover:text-lightblue">Justin Noeller</p>
         <p>November 13, 2022 9:15:20 PM</p>
       </div>
-      <div className="px-5 py-3 mb-3 bg-black rounded-md text-white leading-relaxed">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-          veniam odit, cupiditate placeat officiis porro nulla at ex, quibusdam
-          deleniti voluptate eligendi autem? Alias rerum cumque tempore
-          consequuntur doloremque! Nisi minus fugiat, deleniti, blanditiis ad,
-          neque nostrum sapiente quisquam atque quo nihil assumenda. Quasi autem
-          magnam libero et doloribus ab cum. Doloremque aspernatur in provident
-          alias? Eius vitae tempora, veritatis sed ad odit, eligendi asperiores
-          numquam consectetur eveniet in minima, accusantium eos inventore
-          commodi! Laboriosam voluptatem dolor dicta, ab saepe esse, dolore id
-          nobis accusantium obcaecati tempora nihil
-        </p>
+      <div className="px-5 py-3 mb-3 w-full bg-black rounded-md text-white leading-relaxed">
+        <p>Lorem</p>
       </div>
     </div>
   );
