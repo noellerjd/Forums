@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 
 function App() {
-  const [forumUser, setForumUser] = useState(null);
+  const [user, setUser] = useState(null);
   const [accessToken, setAccessToken] = useState("");
   const { isLoading, isAuthenticated, getAccessTokenSilently } = useAuth0();
 
@@ -28,7 +28,7 @@ function App() {
         })
           .then((res) => res.json())
           .then((data) => {
-            setForumUser({
+            setUser({
               email: data.email,
               username: data.email,
               auth_id: data.sub,
@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div className="bg-black min-h-screen">
-      <UserContext.Provider value={{ forumUser, accessToken }}>
+      <UserContext.Provider value={{ user, accessToken }}>
         <Header />
         <Router>
           <Routes>
