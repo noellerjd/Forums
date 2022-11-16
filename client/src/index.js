@@ -11,6 +11,7 @@ root.render(
       domain="forums.us.auth0.com"
       clientId="xArDgvt1ecvTuYBHF0d8BAHa0ut04Uy5"
       redirectUri={window.location.origin}
+      audience="https://forums.us.auth0.com/api/v2/"
     >
       <App />
     </Auth0Provider>
