@@ -13,13 +13,11 @@ module.exports = {
       .catch((err) => res.status(500).json(err));
   },
   getUser(req, res) {
-    User.findOne({ _id: req.params.userId })
-      .select("-__V")
-      .then((user) =>
-        !user
-          ? res.status(404).json({ message: "Invalid user ID" })
-          : res.json(user)
-      );
+    User.findOne({ _id: req.params.userId }).then((user) =>
+      !user
+        ? res.status(404).json({ message: "Invalid user ID" })
+        : res.json(user)
+    );
   },
   // get user posts, get a user post, create user post, update user post?, delete user post,
   // get replies, get a user reply, create user reply, update user reply?, delete user reply
