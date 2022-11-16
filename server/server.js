@@ -2,6 +2,7 @@ const express = require("express");
 const db = require("./config/connection");
 const routes = require("./routes");
 const { auth } = require("express-oauth2-jwt-bearer");
+const { errorHandler } = require("./middleware/error-handler");
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -13,7 +14,8 @@ const checkJWT = auth({
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-// app.use(checkJWT)
+app.use(checkJWT);
+app.use(errorHandler);
 app.use(routes);
 
 db.once("open", () => {
