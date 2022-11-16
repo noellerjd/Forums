@@ -1,11 +1,15 @@
 const express = require("express");
 const db = require("./config/connection");
 const routes = require("./routes");
-
-const cwd = process.cwd();
+const { auth } = require("express-oauth2-jwt-bearer");
 
 const PORT = process.env.PORT || 3001;
 const app = express();
+
+const checkJWT = auth({
+  audience: "https://forums.us.auth0.com/api/v2/",
+  issuerBaseURL: `https://forums.us.auth0.com/`,
+});
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

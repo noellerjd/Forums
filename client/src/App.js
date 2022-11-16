@@ -21,6 +21,8 @@ function App() {
       getAccessTokenSilently().then((token) => {
         setAccessToken(token);
 
+        console.log(token);
+
         fetch(`https://${domain}/userinfo`, {
           headers: {
             Authorization: `Bearer ${token}`,
