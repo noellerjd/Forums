@@ -13,6 +13,7 @@ const checkJWT = auth({
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+// app.use(checkJWT)
 app.use(routes);
 
 db.once("open", () => {

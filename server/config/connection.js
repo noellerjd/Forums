@@ -1,11 +1,14 @@
 const { connect, connection } = require("mongoose");
+const { mongoURI } = require("./config");
 
-const connectionString =
-  process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/forumDB";
+const connectionString = mongoURI;
+
+console.log(connectionString);
 
 connect(connectionString, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
+  dbName: "forums",
 });
 
 module.exports = connection;
